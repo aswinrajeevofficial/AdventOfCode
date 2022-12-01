@@ -11,16 +11,8 @@ public class MaximumCaloriesPartTwo {
         BufferedReader br = new BufferedReader((new FileReader(file)));
 
         String st;
-        Long currentCalorie = 0L, maxCalorie = 0L;
-        while((st = br.readLine()) != null){
-            if(!st.isEmpty())
-                currentCalorie += Long.valueOf(st);
-            else{
-                if(maxCalorie == 0 || maxCalorie < currentCalorie)
-                    maxCalorie = currentCalorie;
-                currentCalorie = 0L;
-            }
-        }
-        System.out.println(maxCalorie);
+        Long currentCalorie = 0L, maxCalorie1 = 0L, maxCalorie2 = 0L, maxCalorie3 = 0L;
+
     }
+
 }
